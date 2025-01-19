@@ -1,58 +1,38 @@
-<h1>JWipe - Disk Sanitization</h1>
+<h1>Scanning a Victim Machine</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+I conducted a comprehensive vulnerability scan on a target machine in this project to identify potential security weaknesses. I assessed the system using OpenVas, a vulnerability tool used for outdated software, misconfigurations, and exposed services that attackers could exploit. The scan provided valuable insights into the vulnerabilities present, enabling the formulation of effective remediation strategies to strengthen the machine's security posture.
 <br />
 
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>C</b> 
+- <b>OpenVas</b>
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>Windows 11</b> 
 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Connection to target Machine: <br/>
+<img src="https://github.com/user-attachments/assets/144d365b-ac1a-4963-907a-483237a1e3d6" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Target Machine Scan Results:  <br/>
+<img src="https://github.com/user-attachments/assets/eb612748-aa16-44fb-9b09-f00b3bab626d" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+Scan Results Review: <br/>
+ 
+Based on the scan results, the next step would involve remediating the vulnerabilities discovered which may or may not include the following:
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+* Apply patches to outdated software 
+* Close unnecessary open ports
+* Modify misconfigurations in the system
+* After remediating the vulnerabilities, you can re-scan the target machine to ensure that the vulnerabilities have been addressed
+<br />
+<br />
