@@ -8,14 +8,22 @@ I conducted a comprehensive vulnerability scan on a target machine in this proje
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>C</b> 
 - <b>OpenVas</b>
+- <b>C (Core Engine)</b>
+- <b>Python (Scripting, Automation)</b>
+- <b>XML (Data Storage and Transmission)</b>
+- <b>NASL (Network Vulnerability Tests)</b>
+- <b>PostgreSQL (Database)</b>
+- <b>OpenSSH (Secure Connections)</b>
+- <b>Curl/Wget (File Downloads)</b>
+- <b>Shell Scripts (System Automation)</b>
+- <b>Web Browser (User Interface)</b>
 
 <h2>Environments Used </h2>
 
 - <b>Windows 11</b> 
 
-<h2>Program walk-through:</h2>
+<h2>Project Screen Shots:</h2>
 
 <p align="center">
 Connection to target Machine: <br/>
